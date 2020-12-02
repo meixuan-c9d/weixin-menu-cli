@@ -1,5 +1,6 @@
 #!/bin/sh
 ':' //; exec "$(which node)" "$0" "$@"
+
 require('dotenv').config()
 const { promisify } = require('util')
 const fs = require('fs')
@@ -40,4 +41,3 @@ Menu created according to ${DEFAULT_PATH_MENU_CONF}
   }
 
 })()
-
